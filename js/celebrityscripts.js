@@ -26,7 +26,7 @@ $(document).ready(function() {
             $("#result").show();
           }
         }
-      } else {
+      } else if (age >= 40) {
             if (gender === "male") {
             if (personality === "funny") {
             var name = "Bill Murray"
@@ -48,7 +48,10 @@ $(document).ready(function() {
             $("#result").show();
             }
           }
+        } else {
+          alert("Please enter an age.");
         }
+
 
 
       event.preventDefault();
