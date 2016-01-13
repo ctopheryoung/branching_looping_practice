@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/celebritystyles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/celebrityscripts.js"></script>
+    <title>Celebrity</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Which celebrity should you date?</h1>
+      <p>Enter in information about what you would like in a celebrity date.</p>
+
+      <form id="celebrity">
+        <label for="age">Age:</label>
+        <input id="age" type="text">
+        <label for="gender">Gender:</label>
+        <select id="gender">
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+        </select>
+        <label for="personality">Choose peronality type:</label>
+        <select id="personality">
+          <option value="funny">Funny</option>
+          <option value="serious">Seriious</option>
+        </select>
+
+        <button type="submit" class="btn btn-success">Pick my celebrity!</button>
+      </form>
+
+      <div id="result">
+        <p>Your ideal celebrity to date is <span id="celebrityName"></span>.</p>
+      </div>
+    </div>
+  </body>
+</html>
